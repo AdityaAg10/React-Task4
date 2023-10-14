@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+table {
+  margin: 5rem auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 80rem;
+  background-color: #34495E;
+  color: #ECF0F1;
+  border: 2px solid #1F2D3D;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: background-color 0.5s; /* Add transition for background color */
+}
+
+th {
+  background-color: #2E86C1;
+  color: #ECF0F1;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+td {
+  font-size: 1.6rem;
+  padding: 1.5rem;
+}
+
+tr:nth-child(even) {
+  background-color: #3E5774;
+}
+
+tr:nth-child(odd) {
+  background-color: #2C3E50;
+}
+
+.fixed-heading {
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #E74C3C;
+  color: #FFF;
+  padding: 10px;
+  font-size: 36px;
+  z-index: 1;
+  border-radius: 5px;
+  animation: fade 1s ease-in-out; /* Add fade-in animation */
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px); /* Start off the screen */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); /* Fully visible */
+  }
+}
+
+table:hover {
+  background-color: #273746; /* Change background color on hover */
+  transition: background-color 0.5s;
+}
+
